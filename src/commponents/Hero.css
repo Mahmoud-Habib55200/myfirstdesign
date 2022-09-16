@@ -1,0 +1,355 @@
+ .hero{
+    display: flex;
+justify-content: space-between;
+ 
+ 
+
+ }
+
+ .left-h{
+  padding: 1rem;
+ padding-top: 0.5rem;
+flex: 3;
+display: flex;
+gap: 2rem;
+flex-direction: column;
+ }
+
+.right-h{
+    flex: 1;
+    position:relative;
+    background-color:var(--orange);
+ 
+}
+.the-best-ad{
+    margin-top:4rem;
+background-color: #363d42;
+border-radius: 4rem;
+width: fit-content;
+padding: 20px 13px;
+color: white;
+position: relative;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+
+.the-best-ad span{
+    z-index: 2;
+}
+
+.the-best-ad div{
+    position: absolute;
+    background-color: var(--orange);
+    width: 5.4rem;
+    height: 80%;
+left: 8px;
+border-radius: 3rem;
+z-index: 1;
+
+}
+
+.hero-text{
+display: flex;
+flex-direction: column;
+font-size: 4.5rem;
+color: white;
+font-weight: bold;
+text-overflow: inherit;
+gap: 1.5rem;
+}
+
+.hero-text div:nth-of-type(3){
+font-size: 1rem;
+font-weight: 200;
+text-transform: none;
+letter-spacing: 1px;
+width:80%;
+}
+
+.figuers{
+    display: flex;
+    gap: 2rem;
+}
+
+.figuers div{
+    display: flex;
+    flex-direction: column;
+}
+.figuers div span:nth-of-type(1){
+color: white;
+font-size: 2rem;
+}
+.figuers div span:nth-of-type(2){
+    color: gray;
+      text-transform: none;
+    }
+    .hero-buttons{
+        display: flex;
+    gap: 1rem;
+    font-weight: normal;
+    }
+
+.hero-buttons :nth-child(1){
+color: white;
+background-color: var(--orange);
+width: 8rem;
+}
+.hero-buttons :nth-child(2){
+    color: white;
+    background-color: transparent;
+    width: 8rem;
+    border: solid 2px var(--orange);
+    }
+
+.right-h .btn{
+position: absolute;
+ right: 3rem;
+ top: 2rem;
+ color: black;
+  }
+  .heart-rate{
+    display: flex;
+flex-direction: column;  
+gap: 1rem;
+background-color: var(--darkGrey);
+width: fit-content;
+padding: 1rem;
+align-items: start;
+border-radius: 5px;
+position: absolute;
+right: 4rem;
+top: 7rem;
+}
+
+.heart-rate img{
+    width: 2rem;
+}
+
+.heart-rate span:nth-child(2){
+color: gray; 
+}
+.heart-rate span:nth-child(3){
+    color:white;
+    font-size: 1.5rem;
+    }
+    .hero-image{
+        position: absolute;
+     top: 10rem;
+     right: 8rem;
+     width: 23rem;
+ }
+
+ .hero-image-back{
+    position: absolute;
+ top: 4rem;
+ right: 20rem;
+ z-index: -1;
+ width: 15rem;
+ 
+}
+.carlious{
+    display: flex;
+    gap: 2rem;
+    background-color: var(--caloryCard);
+    border-radius: 5px;
+    padding: 1rem;
+    width: fit-content;
+position: absolute;
+top: 32rem;
+right: 28rem;
+}
+
+.carlious img{
+    width: 3rem;
+}
+.carlious div{
+   display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+.carlious div :nth-child(1){
+    color: gray;
+}
+.carlious div :nth-child(2){
+    color: white;
+    font-size: 1.5rem;
+}
+
+.hero-blur{
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+}
+
+@media screen and (max-width:768px) {
+.hero{
+    flex-direction: column;
+}
+
+.hero-blur{
+    width: 14rem;
+}
+
+.the-best-ad{
+    font-size: large;
+    justify-content: center;
+    align-self: center;
+margin-top: 0px;
+transform: scale(0.8);
+}
+
+.hero-text{
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+text-align: center;
+}
+.hero-text > div:nth-of-type(3){
+    font-size: small;
+    letter-spacing: 1px;
+    font-weight: 200;
+    text-align: center;
+
+}
+
+
+.figuers{
+justify-content: center;
+text-align: center;
+}
+
+.figuers > div > span:nth-child(1){
+    font-size: 22px;
+}
+ 
+.figuers > div > span:nth-child(2){
+    font-size: 15px;
+}
+
+.hero-buttons{
+    font-size: small;
+    justify-content: center;
+    align-items: center;
+}
+.right-h{
+    position: relative;
+    background: none;
+}
+
+.heart-rate{
+    left: 1rem;
+    top: 2rem;
+    width: 15rem;
+    height: 9rem;
+}
+.heart-rate>:nth-child(1){
+margin-left: 80px;
+ 
+}
+
+.heart-rate>:nth-child(2){
+ margin-left: 70px;
+    }
+
+    .heart-rate>:nth-child(3){
+        margin-left: 60px;
+        font-size: large;
+           }
+.carlious{
+    position: relative;
+    top: 5rem;
+    left: 2rem;
+  
+}
+
+.carlious>img{
+    width: 2rem;
+}
+.carlious > div > :nth-child(2){
+    color: white;
+    font-size: 1rem;
+}
+
+.hero-image{
+    position: relative;
+    width: 15rem;
+    left: 12rem;
+    top: 5rem;
+    align-self: center;
+}
+.hero-image-back{
+width: 15rem;
+left: 7rem;
+top: 0rem;
+}
+
+@media screen and (max-width:768px) {
+
+.header >:nth-child(2){
+ position: fixed;
+right: 2rem;
+z-index: 99;
+}
+
+.header-menue{
+   
+    background-color: var(--appColor);
+padding: 2rem;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
